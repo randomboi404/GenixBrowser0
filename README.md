@@ -15,7 +15,6 @@ androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01
 ```
 <br>
 
-
 # License
 Licensed under GNU General Public License V3.0
 <a href="https://github.com/randomboi404/GenixBrowser0/blob/main/LICENSE">see here</a>
