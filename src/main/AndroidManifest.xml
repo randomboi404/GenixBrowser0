@@ -2,7 +2,7 @@
     package="com.random.genix"
     android:installLocation="auto"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="0.1-alpha" >
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
