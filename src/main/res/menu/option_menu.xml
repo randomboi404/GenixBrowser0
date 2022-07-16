@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/back" android:icon="@drawable/ic_baseline_keyboard_arrow_left_24" app:showAsAction="always"/>
+	<item android:id="@+id/forward" android:icon="@drawable/ic_baseline_keyboard_arrow_right_24" app:showAsAction="always"/>
+	<item android:id="@+id/reload" android:icon="@drawable/ic_baseline_refresh_24" app:showAsAction="always"/>
+    <item android:id="@+id/item1" android:icon="@drawable/ic_baseline_home_24" android:title="Home"/>
+    <item android:id="@+id/item4" android:checkable="true" android:checked="false" android:title="Private Tab"/>
+    <item android:id="@+id/item5" android:checkable="true" android:checked="false" android:title="Desktop Mode"/>
+    <item android:id="@+id/item6" android:checkable="true" android:checked="false" android:title="Full Screen"/>
+    <item android:id="@+id/item7" android:title="Inspect Element(Beta)"/>
+	<item android:id="@+id/share" android:icon="@drawable/ic_baseline_share_24" android:title="Share"/>
+    <item android:id="@+id/item11" android:title="Settings"/>
+
+</menu>

@@ -1,0 +1,90 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.random.genix"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <application
+        android:allowBackup="true"
+        android:alwaysRetainTaskState="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication" >
+		
+		
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|uiMode|touchscreen|colorMode|density|fontScale|fontWeightAdjustment"
+            android:exported="true"
+            android:hardwareAccelerated="false"
+            android:resizeableActivity="true"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <data
+                    android:host="*"
+                    android:scheme="http" />
+                <data
+                    android:host="*"
+                    android:scheme="https" />
+
+                <action android:name="android.intent.action.PICK" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.random.genix.FirstLaunch"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|uiMode|touchscreen|colorMode|density|fontScale|fontWeightAdjustment"
+            android:exported="true"
+            android:hardwareAccelerated="false"
+            android:parentActivityName=".Settings"
+            android:resizeableActivity="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Settings" />
+        </activity>
+        <activity
+            android:name="com.random.genix.intentHandler.SmsIntentHandler"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|uiMode|touchscreen|colorMode|density|fontScale|fontWeightAdjustment"
+            android:exported="true"
+            android:hardwareAccelerated="false"
+            android:resizeableActivity="true" >
+        </activity>
+        <activity
+            android:name="com.random.genix.Settings"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|uiMode|touchscreen|colorMode|density|fontScale|fontWeightAdjustment"
+            android:exported="true"
+            android:hardwareAccelerated="false"
+            android:parentActivityName=".MainActivity"
+            android:resizeableActivity="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
