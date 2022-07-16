@@ -15,6 +15,18 @@ androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01
 ```
 <br>
 
+
+# Features:
+
+- Ability to save caches of visited websites and load them faster the next time.
+- Loads webpages ~ 35% faster than other browsers like chrome, firefox etc (Tested).
+- A lite browser which uses low amount of memory.
+- Open sourced.
+
+
 # License
 Licensed under GNU General Public License V3.0
 <a href="https://github.com/randomboi404/GenixBrowser0/blob/main/LICENSE">see here</a>
+
+
+_Note: This browser is still in development._
